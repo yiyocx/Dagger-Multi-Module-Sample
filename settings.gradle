@@ -1,0 +1,6 @@
+rootProject.name='Dagger Multi Module'
+include ':app'
+include ':flight'
+include ':hotel'
+include ':flight-api'
+include ':hotel-api'
