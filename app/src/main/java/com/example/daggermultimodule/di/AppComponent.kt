@@ -1,10 +1,13 @@
 package com.example.daggermultimodule.di
 
-import com.example.flight.di.FlightComponent
-import com.example.hotel.di.HotelComponent
+import com.example.hotel_api.di.HotelApiComponent
 import dagger.Component
 
-@Component(dependencies = [FlightComponent::class, HotelComponent::class])
+@Component(
+    dependencies = [
+        HotelApiComponent::class
+    ]
+)
 interface AppComponent {
 
 }
